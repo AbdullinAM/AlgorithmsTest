@@ -18,7 +18,11 @@ fun test(foo: Int?, bar: Int): Int {
     return i
 }
 
+fun getNullableInt(): Int? {
+    return 0
+}
+
 fun main() {
-    var a: Any? = 0
-    println(App().greeting)
+    val a: Int? = getNullableInt()
+    println(test(a, 0))
 }
