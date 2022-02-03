@@ -10,6 +10,14 @@ class App {
         }
 }
 
+fun test(foo: Int?, bar: Int): Int {
+    var i = foo
+    if (i == null) {
+        return bar
+    }
+    return i
+}
+
 fun main() {
     var a: Any? = 0
     println(App().greeting)
